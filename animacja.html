@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grey {
+        filter: grayscale(100%);
+      }
+      .blur {
+        filter: blur(5px);
+      }
+      .inwersja {
+        filter: invert(100%);
+      }
+      .kontrast {
+        filter: contrast(300%);
+      }
+      .hue {
+        filter: hue-rotate(180deg);
+      }
+      .saturacja {
+        filter: saturate(300%);
+      }
+      .jasnosc {
+        filter: brightness(500%);
+      }
+      .sepia {
+        filter: sepia(50%);
+      }
+      .razem:hover {
+        filter: contrast(200%) saturate(200%) hue-rotate(270deg);
+      }
+      p {
+        font-size: 400%;
+        font-weight: bold;
+        color: white;
+        text-shadow: -2px 0 rgb(204, 17, 17), 0 2px rgb(42, 19, 170),
+          2px 0 rgb(223, 9, 141), 0 -2px rgb(77, 196, 30);
+      }
+      .obraz {
+        border: 5px solid red;
+        border-radius: 10px;
+        transition: 0.8s;
+        box-shadow: 0px 0px 15px black;
+      }
+      .obraz:hover {
+        border-radius: 100%;
+        filter: saturate(200%);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Obraz naturalny</h2>
+    <img src="./img/o4.jpg" width="400px" />
+    <h2>Skala szarości</h2>
+    <img src="./img/o4.jpg" width="400px" class="grey" />
+    <h2>Rozmycie - blur</h2>
+    <img src="./img/o4.jpg" width="400px" class="blur" />
+    <h2>Negatyw - inwersja</h2>
+    <img src="./img/o4.jpg" width="400px" class="inwersja" />
+    <h2>Kontrast</h2>
+    <img src="./img/o4.jpg" width="400px" class="kontrast" />
+    <h2>Zamiana kolorów - hue rotate</h2>
+    <img src="./img/o4.jpg" width="400px" class="hue" />
+    <h2>Nasycenie - saturacja</h2>
+    <img src="./img/o4.jpg" width="400px" class="saturacja" />
+    <h2>Jasność</h2>
+    <img src="./img/o4.jpg" width="400px" class="jasnosc" />
+    <h2>Sepia</h2>
+    <img src="./img/o4.jpg" width="400px" class="sepia" />
+    <h2>Efekty razem</h2>
+    <img src="./img/o4.jpg" width="400px" class="razem" />
+    <p>Cieniowany tekst</p>
+    <img src="./img/kot.jpg" width="400px" class="obraz" />
+  </body>
+</html>
